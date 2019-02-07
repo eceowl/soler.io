@@ -674,7 +674,7 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-elevation-z24 {
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12); }
 
-.mat-app-background {
+.mat-app-background, body {
   background-color: #303030;
   color: white; }
 
@@ -1757,5 +1757,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-simple-snackbar-action {
   color: inherit; }
+
+html {
+  height: 100%;
+  padding: 0px; }
+
+body {
+  padding: 0px;
+  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */
