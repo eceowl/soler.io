@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,qBAAsB;AAClB;mDAC+C;EAC/C,IAAI,EAAE,QAAQ",
-"sources": ["toolbar.component.scss"],
-"names": [],
-"file": "toolbar.component.css"
-}
+{"version":3,"sourceRoot":"","sources":["toolbar.component.scss"],"names":[],"mappings":"AAAA;AACI;AAAA;EAEA;;;AAGJ;EACE;EACA","file":"toolbar.component.css"}

@@ -1,9 +1,8 @@
-<mat-toolbar color="primary">
-  <img style="height: 100px; width:auto;"   src="assets/img/logo_transparent.png"/>
+<mat-toolbar [@toggle]="isVisible" class="md-tall mat-elevation-z4" color="primary">
+  <button fxShow="true" fxHide.gt-sm="true" (click)="openSideNav()" color="accent" mat-icon-button >
+    <mat-icon svgIcon="menu" ></mat-icon>
+  </button>
   <span class="fill-remaining-space"></span>
-  <button mat-button color="accent">About</button>
-  <button mat-button color="accent">Experience</button>
-  <button mat-button color="accent">Work</button>
-  <button mat-button color="accent">Contact</button>
-  <button mat-stroked-button color="accent">Resume</button>
+  <app-toolbar-branding class="branding fill-remaining-space"></app-toolbar-branding>
+  <app-navigation-buttons fxShow.gt-md="true" fxHide.lt-md="true"></app-navigation-buttons>
 </mat-toolbar>

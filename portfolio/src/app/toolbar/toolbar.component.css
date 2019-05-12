@@ -1,6 +1,12 @@
 .fill-remaining-space {
-    /* This fills the remaining space, by using flexbox.
--   Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto; }
+  /* This fills the remaining space, by using flexbox.
+  -   Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.branding {
+  height: 55px;
+  width: 100%;
+}
 
 /*# sourceMappingURL=toolbar.component.css.map */

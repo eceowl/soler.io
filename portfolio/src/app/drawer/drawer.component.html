@@ -1,0 +1,16 @@
+<mat-sidenav-container [hasBackdrop]="true"  class="example-container">
+  <mat-sidenav mode="over" [(opened)]="opened">
+    <div class="sidenav-container">
+
+      <app-navigation-buttons></app-navigation-buttons>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-toolbar class="toolbar"  (sideNavStateChanged)="toggleDrawer($event)"></app-toolbar>
+    <div class="container">
+      <app-cover class="cover"></app-cover>
+      <app-main-content class="content"></app-main-content>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

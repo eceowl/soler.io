@@ -1,0 +1,12 @@
+.toolbar-button {
+  margin-left: 6px;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row nowrap;
+
+  @media only screen and (max-width: 959px) {
+    flex-flow: column nowrap;
+  }
+}
