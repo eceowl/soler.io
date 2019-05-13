@@ -1,0 +1,94 @@
+
+.container {
+  margin-top: 200px;
+  margin-left: 75px;
+
+  @media only screen and (max-width: 900px) {
+    padding: 10px;
+    margin-left: 0px;
+  }
+
+  .header {
+    .header-label {
+      color: var(--color-accent);
+      font-size: 36px;
+      font-family: 'Righteous', cursive;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 24px;
+      }
+
+      @media only screen and (max-width: 374px) {
+        font-size: 18px;
+      }
+
+    }
+
+    mat-divider {
+      border-top-color: white;
+      width: 50%;
+      margin-top: 50px;
+      margin-left: 10px;
+
+      @media only screen and (max-width: 600px) {
+        margin-top: 32px;
+      }
+
+
+      @media only screen and (max-width: 374px) {
+        margin-top: 25px;
+      }
+
+    }
+
+
+
+  }
+
+  .dave-about {
+
+
+    .adjusted {
+      margin-left: 3px;
+    }
+
+    .description {
+      @extend .adjusted;
+      color:  white;
+      font-size: 24px;
+      font-family: Nova, monospace;
+    }
+
+
+    .headshot-container {
+      .headshot {
+        border-radius: 8px;
+        mask-image: linear-gradient(var(--color-accent), transparent);
+      }
+    }
+
+  }
+
+  .gill-about {
+    @extend  .dave-about;
+    margin-top: 50px;
+
+    .description {
+      @extend .adjusted;
+      color:  white;
+      font-size: 24px;
+      font-family: Nova, monospace;
+      text-align: right;
+
+      max-width: 50%;
+
+      @media only screen and (max-width: 960px) {
+       text-align: left;
+        max-width: 100%;
+      }
+
+    }
+  }
+}
+
+

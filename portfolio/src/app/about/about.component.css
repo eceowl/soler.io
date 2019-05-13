@@ -1,0 +1,71 @@
+.container {
+  margin-top: 200px;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 10px;
+    margin-left: 0px;
+  }
+}
+.container .header .header-label {
+  color: var(--color-accent);
+  font-size: 36px;
+  font-family: "Righteous", cursive;
+}
+@media only screen and (max-width: 600px) {
+  .container .header .header-label {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .container .header .header-label {
+    font-size: 18px;
+  }
+}
+.container .header mat-divider {
+  border-top-color: white;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container .header mat-divider {
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .container .header mat-divider {
+    margin-top: 25px;
+  }
+}
+.container .dave-about .adjusted, .container .gill-about .adjusted, .container .dave-about .description, .container .gill-about .description {
+  margin-left: 3px;
+}
+.container .dave-about .description, .container .gill-about .description {
+  color: white;
+  font-size: 24px;
+  font-family: Nova, monospace;
+}
+.container .dave-about .headshot-container .headshot, .container .gill-about .headshot-container .headshot {
+  border-radius: 8px;
+  mask-image: linear-gradient(var(--color-accent), transparent);
+}
+.container .gill-about {
+  margin-top: 50px;
+}
+.container .gill-about .description {
+  color: white;
+  font-size: 24px;
+  font-family: Nova, monospace;
+  text-align: right;
+  max-width: 50%;
+}
+@media only screen and (max-width: 960px) {
+  .container .gill-about .description {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=about.component.css.map */

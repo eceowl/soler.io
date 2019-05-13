@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgModule, Renderer2} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule} from '@angular/material';
+import {MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, MatDividerModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { DrawerComponent } from './drawer/drawer.component';
 import { NavigationButtonsComponent } from './navigation-buttons/navigation-buttons.component';
 import { ToolbarBrandingComponent } from './toolbar-branding/toolbar-branding.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     NavigationButtonsComponent,
     ToolbarBrandingComponent,
     MainContentComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatDividerModule,
     MatIconModule,
     FlexLayoutModule,
     RouterModule.forRoot(appRoutes),
