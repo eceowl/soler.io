@@ -64,6 +64,8 @@
       .headshot {
         border-radius: 8px;
         mask-image: linear-gradient(var(--color-accent), transparent);
+        max-height: 450px;
+        max-width: 347px;
       }
     }
 

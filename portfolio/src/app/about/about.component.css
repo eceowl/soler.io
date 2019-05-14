@@ -50,6 +50,8 @@
 .container .dave-about .headshot-container .headshot, .container .gill-about .headshot-container .headshot {
   border-radius: 8px;
   mask-image: linear-gradient(var(--color-accent), transparent);
+  max-height: 450px;
+  max-width: 347px;
 }
 .container .gill-about {
   margin-top: 50px;

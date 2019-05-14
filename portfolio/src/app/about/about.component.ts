@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  daveSkills = [
+    "Responsive Web Development",
+    "Mobile App Development",
+  ];
+
+  daveTechnologies = [
+    "C#",
+    "Java",
+    "Angular",
+    "Xamarin Forms",
+    "Flutter",
+    "WordPress",
+  ];
+
+  gillSkills = [
+    ""
+  ];
+
   constructor() { }
 
   ngOnInit() {
