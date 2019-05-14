@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ScrollService} from "../services/scroll.service";
+import {DrawerService} from "../services/drawer.service";
 
 @Component({
   selector: 'app-navigation-buttons',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationButtonsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollService: ScrollService,
+              private drawerService: DrawerService) { }
 
   ngOnInit() {
+  }
+
+  scrollTo(section: string) {
+    this.drawerService.closeDrawer();
+    this.scrollService.scrollToSection(section);
   }
 
 }

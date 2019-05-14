@@ -39,35 +39,35 @@
     margin-top: 25px;
   }
 }
-.container .dave-about .adjusted, .container .gill-about .adjusted, .container .dave-about .description, .container .gill-about .description {
-  margin-left: 3px;
+.container .middle-profiles {
+  margin-top: 55px;
 }
-.container .dave-about .description, .container .gill-about .description {
-  color: white;
-  font-size: 24px;
-  font-family: Nova, monospace;
-}
-.container .dave-about .headshot-container .headshot, .container .gill-about .headshot-container .headshot {
+.container .about .headshot-container .headshot {
   border-radius: 8px;
   mask-image: linear-gradient(var(--color-accent), transparent);
   max-height: 450px;
   max-width: 347px;
 }
-.container .gill-about {
-  margin-top: 50px;
+.container .about .adjusted, .container .about .description {
+  margin-left: 3px;
 }
-.container .gill-about .description {
-  color: white;
-  font-size: 24px;
+.container .about .description {
+  color: lightgray;
+  font-size: 18px;
   font-family: Nova, monospace;
-  text-align: right;
-  max-width: 50%;
 }
-@media only screen and (max-width: 960px) {
-  .container .gill-about .description {
-    text-align: left;
-    max-width: 100%;
-  }
+.container .staff-skills .skill-header {
+  font-size: 24px;
+  font-family: "Righteous", cursive;
+  color: var(--color-accent);
+  text-align: left;
+}
+.container .staff-skills .skills ul {
+  text-align: left;
+}
+.container .staff-skills .skills li {
+  color: white;
+  font-family: Nova, monospace;
 }
 
 /*# sourceMappingURL=about.component.css.map */

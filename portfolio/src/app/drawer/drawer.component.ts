@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {DrawerService} from "../services/drawer.service";
 
 @Component({
   selector: 'app-drawer',
@@ -8,7 +9,12 @@ import {Component, Input, OnInit} from '@angular/core';
 export class DrawerComponent implements OnInit {
   opened: boolean;
 
-  constructor() { }
+  constructor(private drawerService: DrawerService) {
+    drawerService.isOpened$
+      .subscribe(isOpen => {
+        this.toggleDrawer(isOpen);
+      });
+  }
 
   ngOnInit() {
   }

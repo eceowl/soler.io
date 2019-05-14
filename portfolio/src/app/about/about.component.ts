@@ -8,21 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   daveSkills = [
-    "Responsive Web Development",
+    "Responsive Website Development",
     "Mobile App Development",
   ];
 
-  daveTechnologies = [
-    "C#",
-    "Java",
-    "Angular",
-    "Xamarin Forms",
-    "Flutter",
-    "WordPress",
-  ];
-
   gillSkills = [
-    ""
+    "Digital Content Strategy",
+    "Writing/Editorial Content",
+    "Social Media Marketing"
   ];
 
   constructor() { }

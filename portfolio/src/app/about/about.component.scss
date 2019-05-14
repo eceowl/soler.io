@@ -45,8 +45,20 @@
 
   }
 
-  .dave-about {
+  .middle-profiles {
+    margin-top: 55px;
+  }
 
+  .about {
+    .headshot-container {
+      .headshot {
+        border-radius: 8px;
+        mask-image: linear-gradient(var(--color-accent), transparent);
+        max-height: 450px;
+        max-width: 347px;
+
+      }
+    }
 
     .adjusted {
       margin-left: 3px;
@@ -54,41 +66,28 @@
 
     .description {
       @extend .adjusted;
-      color:  white;
-      font-size: 24px;
+      color:  lightgray;
+      font-size: 18px;
       font-family: Nova, monospace;
     }
-
-
-    .headshot-container {
-      .headshot {
-        border-radius: 8px;
-        mask-image: linear-gradient(var(--color-accent), transparent);
-        max-height: 450px;
-        max-width: 347px;
-      }
-    }
-
   }
 
-  .gill-about {
-    @extend  .dave-about;
-    margin-top: 50px;
-
-    .description {
-      @extend .adjusted;
-      color:  white;
+  .staff-skills {
+    .skill-header {
       font-size: 24px;
-      font-family: Nova, monospace;
-      text-align: right;
+      font-family: 'Righteous', cursive;
+      color: var(--color-accent);
+      text-align: left;
+    }
 
-      max-width: 50%;
-
-      @media only screen and (max-width: 960px) {
-       text-align: left;
-        max-width: 100%;
+    .skills {
+      ul {
+        text-align: left;
       }
-
+      li {
+        color: white;
+        font-family: Nova, monospace
+      }
     }
   }
 }

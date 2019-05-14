@@ -4,16 +4,15 @@ import {DomSanitizer} from "@angular/platform-browser";
 import {fromEvent} from "rxjs";
 import {distinctUntilChanged, filter, map, pairwise, throttleTime} from "rxjs/operators";
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {ScrollService} from "../services/scroll.service";
+import {DrawerService} from "../services/drawer.service";
 
 enum VisibilityState {
   Visible = 'visible',
   Hidden = 'hidden'
 }
 
-enum Direction {
-  Up = 'Up',
-  Down = 'Down'
-}
+
 
 @Component({
   selector: 'app-toolbar',
@@ -35,9 +34,11 @@ enum Direction {
 })
 export class ToolbarComponent implements OnInit, AfterViewInit {
   private isVisible = true;
-  @Output() sideNavStateChanged = new EventEmitter<boolean>();
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry,
+              sanitizer: DomSanitizer,
+              private scrollService: ScrollService,
+              private drawerService: DrawerService) {
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/menu.svg'));
@@ -53,27 +54,11 @@ export class ToolbarComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const scroll$ = fromEvent(window, 'scroll').pipe(
-      throttleTime(10),
-      map(() => window.pageYOffset),
-      pairwise(),
-      map(([y1, y2]): Direction => (y2 < y1 ? Direction.Up : Direction.Down)),
-      distinctUntilChanged(),
-    );
-
-    const scrollUp$ = scroll$.pipe(
-      filter(direction => direction === Direction.Up)
-    );
-
-    const scrollDown = scroll$.pipe(
-      filter(direction => direction === Direction.Down)
-    );
-
-    scrollUp$.subscribe(() => (this.isVisible = true));
-    scrollDown.subscribe(() => (this.isVisible = false));
+    this.scrollService.scrollUp$.subscribe(() => (this.isVisible = true));
+    this.scrollService.scrollDown$.subscribe(() => (this.isVisible = false));
   }
 
   openSideNav() {
-    this.sideNavStateChanged.emit(true);
+    this.drawerService.openDrawer();
   }
 }
