@@ -1,7 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgModule, Renderer2} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, MatDividerModule} from '@angular/material';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatDividerModule,
+  MatCardModule, MatGridListModule
+} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -17,6 +24,7 @@ import { NavigationButtonsComponent } from './navigation-buttons/navigation-butt
 import { ToolbarBrandingComponent } from './toolbar-branding/toolbar-branding.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { AboutComponent } from './about/about.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +37,7 @@ import { AboutComponent } from './about/about.component';
     ToolbarBrandingComponent,
     MainContentComponent,
     AboutComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +48,8 @@ import { AboutComponent } from './about/about.component';
     MatToolbarModule,
     MatDividerModule,
     MatIconModule,
+    MatCardModule,
+    MatGridListModule,
     FlexLayoutModule,
     RouterModule.forRoot(appRoutes),
   ],

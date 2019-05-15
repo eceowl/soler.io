@@ -1,7 +1,7 @@
 <mat-sidenav-container [hasBackdrop]="true"  class="example-container">
   <mat-sidenav [fixedInViewport]="true" [autoFocus]="false" mode="over" [(opened)]="opened">
     <div class="sidenav-container">
-      <img alt="logo" class="logo" src="assets/img/JointLogoNoText.png"/>
+      <a href="javascript:void(0);" (click)="scrollToTop()"><img alt="logo" id="toolbar-logo" class="toolbar-logo" src="assets/img/JointLogoNoText.png"/></a>
       <div class="button-container">
         <app-navigation-buttons></app-navigation-buttons>
       </div>

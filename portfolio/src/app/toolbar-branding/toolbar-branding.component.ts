@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ScrollService} from "../services/scroll.service";
 
 @Component({
   selector: 'app-toolbar-branding',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarBrandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollService: ScrollService) { }
 
   ngOnInit() {
   }
 
+  scrollToTop() {
+    this.scrollService.scrollToTop();
+  }
 }

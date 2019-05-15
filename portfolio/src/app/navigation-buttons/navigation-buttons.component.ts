@@ -9,15 +9,16 @@ import {DrawerService} from "../services/drawer.service";
 })
 export class NavigationButtonsComponent implements OnInit {
 
-  constructor(private scrollService: ScrollService,
-              private drawerService: DrawerService) { }
+  constructor(private scrollService: ScrollService) { }
 
   ngOnInit() {
   }
 
   scrollTo(section: string) {
-    this.drawerService.closeDrawer();
     this.scrollService.scrollToSection(section);
   }
 
+  contactUs() {
+    window.open("https://app.hellobonsai.com/u/soler-io/contact");
+  }
 }

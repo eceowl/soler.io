@@ -12,4 +12,8 @@ export class HeroComponent implements OnInit {
   ngOnInit() {
   }
 
+  sendEmail() {
+    window.open("https://app.hellobonsai.com/u/soler-io/contact");
+  }
+
 }

@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DrawerService} from "../services/drawer.service";
+import {ScrollService} from "../services/scroll.service";
 
 @Component({
   selector: 'app-drawer',
@@ -9,7 +10,8 @@ import {DrawerService} from "../services/drawer.service";
 export class DrawerComponent implements OnInit {
   opened: boolean;
 
-  constructor(private drawerService: DrawerService) {
+  constructor(private drawerService: DrawerService,
+              private scrollService: ScrollService) {
     drawerService.isOpened$
       .subscribe(isOpen => {
         this.toggleDrawer(isOpen);
@@ -24,4 +26,7 @@ export class DrawerComponent implements OnInit {
   }
 
 
+  scrollToTop() {
+    this.scrollService.scrollToTop();
+  }
 }
