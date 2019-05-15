@@ -1,0 +1,18 @@
+<mat-sidenav-container [hasBackdrop]="true"  class="example-container">
+  <mat-sidenav [fixedInViewport]="true" [autoFocus]="false" mode="over" [(opened)]="opened">
+    <div class="sidenav-container">
+      <a href="javascript:void(0);" (click)="scrollToTop()"><img alt="logo" id="toolbar-logo" class="toolbar-logo" src="assets/img/JointLogoNoText.png"/></a>
+      <div class="button-container">
+        <app-navigation-buttons></app-navigation-buttons>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-toolbar class="toolbar"></app-toolbar>
+    <div class="container">
+      <app-cover class="cover"></app-cover>
+      <app-main-content class="content"></app-main-content>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

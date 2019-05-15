@@ -1,0 +1,21 @@
+@import 'app/theme';
+
+html {
+  height: 100%;
+
+  padding:0px;
+}
+
+@mixin mat-ripple-theme($theme) {
+  .mat-ripple-element {
+    background-color: red;
+  }
+}
+
+body {
+ @extend .mat-app-background;
+ padding:0px;
+  margin:0;
+}
+
+

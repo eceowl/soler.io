@@ -1,0 +1,39 @@
+.intro-container {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 900px) {
+  .intro-container {
+    padding: 10px;
+    margin-left: 0px;
+  }
+}
+.intro-container .greeting {
+  color: var(--color-accent);
+  font-size: 48px;
+  font-family: "Righteous", cursive;
+}
+.intro-container .adjusted, .intro-container .intro, .intro-container .description, .intro-container .specialities {
+  margin-left: 3px;
+}
+.intro-container .intro, .intro-container .description, .intro-container .specialities {
+  color: white;
+  font-size: 24px;
+  font-family: Nova, monospace;
+}
+.intro-container .description, .intro-container .specialities {
+  margin-top: 25px;
+  font-size: 18px;
+  color: lightgray;
+  max-width: 35em;
+}
+.intro-container .cta-button {
+  margin-top: 25px;
+  width: 175px;
+  border-width: thin;
+  border-color: var(--color-accent);
+  outline-color: var(--color-accent);
+}
+
+/*# sourceMappingURL=hero.component.css.map */

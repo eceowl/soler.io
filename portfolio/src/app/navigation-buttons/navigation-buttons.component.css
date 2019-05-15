@@ -1,0 +1,15 @@
+.toolbar-button {
+  margin-left: 6px;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media only screen and (max-width: 959px) {
+  .button-container {
+    flex-flow: column nowrap;
+  }
+}
+
+/*# sourceMappingURL=navigation-buttons.component.css.map */

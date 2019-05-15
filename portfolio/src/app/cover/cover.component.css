@@ -1,0 +1,39 @@
+.header-image {
+  margin-top: 4px;
+  height: 400px;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .header-image {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-image {
+    height: 215px;
+  }
+}
+
+.container {
+  margin-top: 60px;
+  width: 100%;
+}
+.container .img-container {
+  position: relative;
+  width: 100%;
+}
+.container .img-container .top {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.container .img-container .bottom {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=cover.component.css.map */

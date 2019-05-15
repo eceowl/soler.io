@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="header" fxLayout="row">
+    <h1 class="header-label">Who are we?</h1>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="about" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+    <div fxFlex="50%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2">
+      <p class="description">
+        My name is Dave Soler and I've been creating software in the Philadelphia Area for over 6 years.
+        I have created responsive marketing websites for small businesses, mobile (Android and iOS) applications for Labor Unions,
+        and even am soon-to-be published for my software contributions to a study at the Children's Hospital of Philadelphia.
+        Needless to say, I am qualified and capable of solving any business problem that comes my way.
+      </p>
+      <div class="staff-skills">
+        <span class="skill-header">Things I am good at:</span>
+        <ul class="skills" *ngFor="let skill of daveSkills">
+          <li>{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+    <div fxFlex="50%" fxFlexOrder.gt-md="2" fxFlexOrder.lt-md="1" fxLayoutAlign="center center">
+      <div class="headshot-container">
+        <img alt="dave-headshot" class="headshot" src="assets/img/DaveHeadshot.png"/>
+      </div>
+    </div>
+  </div>
+  <div class="about middle-profiles" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+    <div fxFlex="50%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2" fxLayoutAlign.gt-md="center">
+      <p class="description" fxFlexAlign="center" >
+        My name is Gill Soler and Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+      <div class="staff-skills">
+        <span class="skill-header">Things I am good at:</span>
+        <ul class="skills" *ngFor="let skill of gillSkills">
+          <li>{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+    <div fxFlex="50%" fxFlexOrder.gt-md="2" fxFlexOrder.lt-md="1" fxLayoutAlign="center center">
+      <div class="headshot-container">
+        <img alt="gill-headshot" class="headshot" src="assets/img/GillHeadshot.jpg"/>
+      </div>
+    </div>
+  </div>
+  <div class="about middle-profiles" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+    <div fxFlex="50%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2" fxLayoutAlign.gt-md="center">
+      <p class="description" fxFlexAlign="center" >
+        My name is Gill Soler and Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+      <div class="staff-skills">
+        <span class="skill-header">Things I am good at:</span>
+        <ul class="skills" *ngFor="let skill of gillSkills">
+          <li>{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+    <div fxFlex="50%" fxFlexOrder.gt-md="2" fxFlexOrder.lt-md="1" fxLayoutAlign="center center">
+      <div class="headshot-container">
+        <img alt="gill-headshot" class="headshot" src="assets/img/PingHeadshot.jpg"/>
+      </div>
+    </div>
+  </div>
+  <div class="about middle-profiles" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+    <div fxFlex="50%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2" fxLayoutAlign.gt-md="center">
+      <p class="description" fxFlexAlign="center" >
+        My name is Gill Soler and Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+      <div class="staff-skills">
+        <span class="skill-header">Things I am good at:</span>
+        <ul class="skills" *ngFor="let skill of gillSkills">
+          <li>{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+    <div fxFlex="50%" fxFlexOrder.gt-md="2" fxFlexOrder.lt-md="1" fxLayoutAlign="center center">
+      <div class="headshot-container">
+        <img alt="gill-headshot" class="headshot" src="assets/img/FrankieHeadshot.jpg"/>
+      </div>
+    </div>
+  </div>
+</div>

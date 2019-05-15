@@ -1,0 +1,73 @@
+.container {
+  margin-top: 200px;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 10px;
+    margin-left: 0px;
+  }
+}
+.container .header .header-label {
+  color: var(--color-accent);
+  font-size: 36px;
+  font-family: "Righteous", cursive;
+}
+@media only screen and (max-width: 600px) {
+  .container .header .header-label {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .container .header .header-label {
+    font-size: 18px;
+  }
+}
+.container .header mat-divider {
+  border-top-color: white;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container .header mat-divider {
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .container .header mat-divider {
+    margin-top: 25px;
+  }
+}
+.container .middle-profiles {
+  margin-top: 55px;
+}
+.container .about .headshot-container .headshot {
+  border-radius: 8px;
+  mask-image: linear-gradient(var(--color-accent), transparent);
+  max-height: 450px;
+  max-width: 347px;
+}
+.container .about .adjusted, .container .about .description {
+  margin-left: 3px;
+}
+.container .about .description {
+  color: lightgray;
+  font-size: 18px;
+  font-family: Nova, monospace;
+}
+.container .staff-skills .skill-header {
+  font-size: 24px;
+  font-family: "Righteous", cursive;
+  color: var(--color-accent);
+  text-align: left;
+}
+.container .staff-skills .skills ul {
+  text-align: left;
+}
+.container .staff-skills .skills li {
+  color: white;
+  font-family: Nova, monospace;
+}
+
+/*# sourceMappingURL=about.component.css.map */

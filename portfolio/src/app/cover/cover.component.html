@@ -1,0 +1,13 @@
+<div fxHide.lt-sm="true" fxShow="true" class="container">
+  <div class="img-container">
+    <div class="top" [@fadeOut]="isFranklinActive ? 'invisible' : 'visible'" [@fadeIn]="isPingActive ? 'visible' : 'onscreen'"><img class="header-image" src="assets/img/PingCover.png" alt="Japanese Chin Cover Image"/></div>
+    <div class="bottom" [@fadeOut]="isPingActive ? 'invisible' : 'visible'" [@fadeIn]="isFranklinActive ? 'visible' : 'onscreen'"><img class="header-image" src="assets/img/FranklinCover.png" alt="Boston Terrier Cover Image"/></div>
+  </div>
+</div>
+
+<div fxShow.lt-sm="true" fxHide="true" class="container">
+  <div class="img-container">
+    <div class="top" [@fadeOut]="isFranklinActive ? 'invisible' : 'visible'" [@fadeIn]="isPingActive ? 'visible' : 'onscreen'"><img class="header-image" src="assets/img/PingCoverCropped.png" alt="Japanese Chin Cover Image"/></div>
+    <div class="bottom" [@fadeOut]="isPingActive ? 'invisible' : 'visible'" [@fadeIn]="isFranklinActive ? 'visible' : 'onscreen'"><img class="header-image" src="assets/img/FranklinCoverCropped.png" alt="Boston Terrier Cover Image"/></div>
+  </div>
+</div>
