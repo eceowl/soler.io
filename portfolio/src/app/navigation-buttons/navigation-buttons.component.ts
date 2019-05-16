@@ -17,8 +17,4 @@ export class NavigationButtonsComponent implements OnInit {
   scrollTo(section: string) {
     this.scrollService.scrollToSection(section);
   }
-
-  contactUs() {
-    window.open("https://app.hellobonsai.com/u/soler-io/contact");
-  }
 }

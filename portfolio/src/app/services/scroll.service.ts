@@ -44,6 +44,8 @@ export class ScrollService {
       element = this.document.getElementById('about-content');
     } else if (section == "portfolio") {
       element = this.document.getElementById('portfolio-content');
+    } else if (section == "contact") {
+      element = this.document.getElementById('contact-content');
     }
 
     if (element) {

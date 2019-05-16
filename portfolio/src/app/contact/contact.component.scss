@@ -1,0 +1,21 @@
+.container {
+  margin-top: 100px;
+  .contact-content {
+    .header {
+      font-size: 36px;
+      font-family: Righteous, cursive;
+      color: var(--color-accent);
+    }
+    .body {
+      font-size: 18px;
+      font-family: Nova, monospace;
+      color: lightgray;
+
+      max-width: 50%;
+    }
+
+    button {
+      margin-top: 25px;
+    }
+  }
+}

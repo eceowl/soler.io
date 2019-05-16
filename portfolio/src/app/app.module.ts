@@ -25,6 +25,8 @@ import { ToolbarBrandingComponent } from './toolbar-branding/toolbar-branding.co
 import { MainContentComponent } from './main-content/main-content.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MainContentComponent,
     AboutComponent,
     PortfolioComponent,
+    FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
