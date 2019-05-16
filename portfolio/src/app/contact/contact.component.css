@@ -1,0 +1,19 @@
+.container {
+  margin-top: 100px;
+}
+.container .contact-content .header {
+  font-size: 36px;
+  font-family: Righteous, cursive;
+  color: var(--color-accent);
+}
+.container .contact-content .body {
+  font-size: 18px;
+  font-family: Nova, monospace;
+  color: lightgray;
+  max-width: 50%;
+}
+.container .contact-content button {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=contact.component.css.map */
