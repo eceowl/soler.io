@@ -1,0 +1,31 @@
+.container {
+  background-color: #1E1E1E;
+  width: 100%;
+  height: 80px;
+  margin-top: 25px;
+
+  .footer-content {
+
+    .credit {
+      font-family: Nova, monospace
+    }
+
+    .social-bar {
+      .social-icon {
+        font-size: 20px;
+      }
+
+      .fa-facebook-square {
+        @extend .social-icon;
+      }
+
+      .fa-instagram {
+        @extend .social-icon;
+      }
+
+      .fa-twitter-square {
+        @extend .social-icon;
+      }
+    }
+  }
+}
