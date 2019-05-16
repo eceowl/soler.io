@@ -1,5 +1,26 @@
 .toolbar-button {
   margin-left: 6px;
+
+  .icon {
+    font-size: 16px;
+  }
+  .white-icon {
+    @extend .icon;
+    color:white;
+  }
+
+  .fa-address-card {
+    @extend .white-icon;
+  }
+
+  .fa-folder-open {
+    @extend .white-icon;
+  }
+
+  .fa-envelope {
+    @extend .icon;
+  }
+
 }
 
 .button-container {

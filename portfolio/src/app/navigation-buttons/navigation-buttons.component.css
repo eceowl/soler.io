@@ -1,7 +1,12 @@
 .toolbar-button {
   margin-left: 6px;
 }
-
+.toolbar-button .icon, .toolbar-button .fa-envelope, .toolbar-button .white-icon, .toolbar-button .fa-folder-open, .toolbar-button .fa-address-card {
+  font-size: 16px;
+}
+.toolbar-button .white-icon, .toolbar-button .fa-folder-open, .toolbar-button .fa-address-card {
+  color: white;
+}
 .button-container {
   display: flex;
   flex-flow: row nowrap;

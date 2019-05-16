@@ -6,8 +6,14 @@
   <div fxLayout="row wrap"  class="project-container">
     <div fxFlex.gt-md="26%" fxFlex.gt-sm="50%" fxFlex.lt-sm="100%" class="project-list" *ngFor="let project of projects">
       <mat-card class="project-card">
-        <mat-card-title class="project-title">
-          {{project.name}}
+        <mat-card-title fxLayout="row" class="project-title">
+          <div class="icon">
+            <i [className]="project.icon"></i>
+          </div>
+          <div class="name">
+            {{project.name}}
+          </div>
+
         </mat-card-title>
         <mat-card-subtitle class="project-subtitle">
           {{project.company}}

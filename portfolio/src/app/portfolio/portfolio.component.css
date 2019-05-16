@@ -60,6 +60,12 @@
   color: var(--color-accent);
   font-size: 24px;
 }
+.project-list .project-card .project-title .icon {
+  color: white;
+}
+.project-list .project-card .project-title .name {
+  margin-left: 10px;
+}
 .project-list .project-card .project-subtitle {
   margin-top: 5px;
   font-family: Nova, monospace;
