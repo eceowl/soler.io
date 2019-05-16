@@ -12,4 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  contactUs() {
+    window.open("https://app.hellobonsai.com/u/soler-io/contact");
+  }
+
 }
