@@ -6,11 +6,21 @@
   font-family: Righteous, cursive;
   color: var(--color-accent);
 }
+@media screen and (max-width: 599px) {
+  .container .contact-content .header {
+    font-size: 24px;
+  }
+}
 .container .contact-content .body {
   font-size: 18px;
   font-family: Nova, monospace;
   color: lightgray;
   max-width: 50%;
+}
+@media screen and (max-width: 599px) {
+  .container .contact-content .body {
+    max-width: 75%;
+  }
 }
 .container .contact-content button {
   margin-top: 25px;

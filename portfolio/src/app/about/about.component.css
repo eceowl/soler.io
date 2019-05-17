@@ -13,34 +13,32 @@
   font-size: 36px;
   font-family: "Righteous", cursive;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 959px) {
   .container .header .header-label {
     font-size: 24px;
-  }
-}
-@media only screen and (max-width: 374px) {
-  .container .header .header-label {
-    font-size: 18px;
   }
 }
 .container .header mat-divider {
   border-top-color: white;
   width: 50%;
   margin-top: 50px;
-  margin-left: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   .container .header mat-divider {
-    margin-top: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
-@media only screen and (max-width: 374px) {
+@media only screen and (min-width: 600px) and (max-width: 959px) {
   .container .header mat-divider {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 }
 .container .middle-profiles {
   margin-top: 55px;
+}
+.container .about {
+  margin-top: 25px;
 }
 .container .about .headshot-container .headshot {
   border-radius: 8px;

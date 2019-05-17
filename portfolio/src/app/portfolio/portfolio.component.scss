@@ -15,74 +15,85 @@
       font-size: 36px;
       font-family: 'Righteous', cursive;
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 959px) {
         font-size: 24px;
       }
-
-      @media only screen and (max-width: 374px) {
-        font-size: 18px;
-      }
-
     }
     mat-divider {
       border-top-color: white;
       width: 50%;
       margin-top: 50px;
-      margin-left: 10px;
 
-      @media only screen and (max-width: 600px) {
-        margin-top: 32px;
+      @media only screen and (max-width: 599px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
 
-
-      @media only screen and (max-width: 374px) {
-        margin-top: 25px;
+      @media only screen and (min-width: 600px) and (max-width: 959px) {
+        margin-top: 30px;
       }
 
     }
   }
 }
 
-.project-list {
-  .project-card {
-    border-radius: 10px;
-    background-color: #4F4F4F;
-    margin-left: 10px;
-    margin-top: 20px;
-    max-width: 300px;
-    @include mat-elevation-transition;
-    @include mat-elevation(2);
+.project-container {
+  margin-right: 75px;
+
+  @media only screen and (max-width: 599px) {
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .project-list {
+    .project-card {
+      border-radius: 10px;
+      background-color: #4F4F4F;
+
+      margin-top: 20px;
+
+      @include mat-elevation-transition;
+      @include mat-elevation(2);
 
 
-    &:hover {
-      @include mat-elevation(6, var(--color-accent));
-    }
-
-    .project-title {
-      font-family: Righteous, cursive;
-      color: var(--color-accent);
-      font-size: 24px;
-
-      .icon {
-        color: white;
+      &:hover {
+        @include mat-elevation(8);
       }
 
-      .name {
-        margin-left:10px;
+      .project-title {
+        font-family: Righteous, cursive;
+        color: var(--color-accent);
+        font-size: 18px;
+
+        .icon {
+          color: white;
+          margin-left: 3px;
+        }
+
+        .name {
+          margin-left: 10px;
+        }
       }
-    }
 
-    .project-subtitle {
-      margin-top: 5px;
-      font-family: Nova, monospace;
-    }
+      .project-subtitle {
+        margin-top: 5px;
+        margin-left: 3px;
+        font-family: Nova, monospace;
 
-    .project-description {
-      font-family: Nova, monospace;
-    }
+        mat-divider {
+          margin-top: 10px;
+        }
+      }
 
-    .project-action {
-      justify-content: end;
+      .project-content {
+        .project-description {
+          font-family: Nova, monospace;
+        }
+      }
+
+      .project-action {
+        justify-content: end;
+      }
     }
   }
 }

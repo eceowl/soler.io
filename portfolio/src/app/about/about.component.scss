@@ -3,6 +3,8 @@
   margin-top: 200px;
   margin-left: 75px;
 
+
+
   @media only screen and (max-width: 900px) {
     padding: 10px;
     margin-left: 0px;
@@ -14,35 +16,25 @@
       font-size: 36px;
       font-family: 'Righteous', cursive;
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 959px) {
         font-size: 24px;
       }
-
-      @media only screen and (max-width: 374px) {
-        font-size: 18px;
-      }
-
     }
-
     mat-divider {
       border-top-color: white;
       width: 50%;
       margin-top: 50px;
-      margin-left: 10px;
 
-      @media only screen and (max-width: 600px) {
-        margin-top: 32px;
+      @media only screen and (max-width: 599px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
 
-
-      @media only screen and (max-width: 374px) {
-        margin-top: 25px;
+      @media only screen and (min-width: 600px) and (max-width: 959px) {
+        margin-top: 30px;
       }
 
     }
-
-
-
   }
 
   .middle-profiles {
@@ -50,6 +42,7 @@
   }
 
   .about {
+    margin-top: 25px;
     .headshot-container {
       .headshot {
         border-radius: 8px;

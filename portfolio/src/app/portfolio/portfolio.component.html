@@ -1,32 +1,37 @@
 <div class="container">
-  <div class="header" fxLayout="row">
-    <h1 class="header-label">What have we done?</h1>
-    <mat-divider></mat-divider>
+  <div class="header" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center center">
+    <h1 fxFlex="30%" fxFlex.sm="40%" fxFlex.lt-sm="100%" class="header-label">What have we done?</h1>
+    <mat-divider fxFlex="60%" fxFlex.lt-lg="50%" fxFlex.lt-sm="100%"></mat-divider>
   </div>
-  <div fxLayout="row wrap"  class="project-container">
-    <div fxFlex.gt-md="26%" fxFlex.gt-sm="50%" fxFlex.lt-sm="100%" class="project-list" *ngFor="let project of projects">
-      <mat-card class="project-card">
-        <mat-card-title fxLayout="row" class="project-title">
-          <div class="icon">
-            <i [className]="project.icon"></i>
-          </div>
-          <div class="name">
-            {{project.name}}
-          </div>
+  <div class="project-container">
+    <div fxLayout="row wrap" fxLayout.lt-sm="column wrap" fxLayoutAlign="center center" class="project-list" >
+      <div style="padding: 2px;" fxFlex.gt-sm="33%" fxFlex.sm="50%" fxFlex.lt-sm="100%"   class="card-container" *ngFor="let project of projects">
+        <mat-card class="project-card">
+          <mat-card-title fxLayout="row" class="project-title">
+            <div class="icon">
+              <i [className]="project.icon"></i>
+            </div>
+            <div class="name">
+              {{project.name}}
+            </div>
 
-        </mat-card-title>
-        <mat-card-subtitle class="project-subtitle">
-          {{project.company}}
-        </mat-card-subtitle>
-        <mat-card-content>
+          </mat-card-title>
+          <mat-card-subtitle class="project-subtitle">
+            {{project.company}}
+          </mat-card-subtitle>
+          <mat-card-content class="project-content">
             <p class="project-description"> {{project.description}}</p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button (click)="openLink(project.link)" class="project-action" mat-icon-button >
-            <mat-icon svgIcon="external-link"></mat-icon>
-          </button>
-        </mat-card-actions>
-      </mat-card>
+
+          </mat-card-content>
+          <mat-divider inset="true"></mat-divider>
+          <mat-card-actions align="end">
+
+            <button mat-flat-button color="accent" (click)="openLink(project.link)" class="project-action">
+              <i class="fas fa-external-link-alt"></i> Show
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
 </div>
