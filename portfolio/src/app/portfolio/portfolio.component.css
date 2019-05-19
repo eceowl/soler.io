@@ -3,16 +3,18 @@
 /* stylelint-enable */
 .container {
   padding: 10px;
+}
+.container .header {
   margin-left: 0px;
 }
 @media only screen and (min-width: 901px) {
-  .container {
+  .container .header {
     margin-top: 200px;
     margin-left: 150px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-  .container {
+  .container .header {
     margin-top: 75px;
     margin-left: 50px;
     margin-right: 50px;
