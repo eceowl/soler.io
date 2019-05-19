@@ -13,7 +13,9 @@ enum Direction {
 })
 export class ScrollService {
 
-  scroll$: Observable<Direction>;
+
+  scrollY$: Observable<number>;
+  scrollDirection$: Observable<Direction>;
   scrollUp$: Observable<Direction>;
   scrollDown$: Observable<Direction>;
 
@@ -21,7 +23,12 @@ export class ScrollService {
               @Inject(PLATFORM_ID) private platformId: Object,
               private drawerService: DrawerService)
   {
-    this.scroll$ = fromEvent(window, 'scroll').pipe(
+
+    this.scrollY$ = fromEvent(window, 'scroll').pipe(
+      map(() => window.pageYOffset)
+    );
+
+    this.scrollDirection$ = fromEvent(window, 'scroll').pipe(
       throttleTime(10),
       map(() => window.pageYOffset),
       pairwise(),
@@ -29,11 +36,11 @@ export class ScrollService {
       distinctUntilChanged(),
     );
 
-    this.scrollUp$ = this.scroll$.pipe(
+    this.scrollUp$ = this.scrollDirection$.pipe(
       filter(direction => direction === Direction.Up)
     );
 
-    this.scrollDown$ = this.scroll$.pipe(
+    this.scrollDown$ = this.scrollDirection$.pipe(
       filter(direction => direction === Direction.Down)
     );
   }

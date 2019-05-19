@@ -1,15 +1,15 @@
 <div class="container">
-  <div class="header" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center center">
+  <div appFadeInOnce class="header" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center center">
     <h1 fxFlex="20%" fxFlex.sm="40%" fxFlex.lt-sm="100%" class="header-label">Who are we?</h1>
     <mat-divider fxFlex="60%" fxFlex.lt-lg="50%" fxFlex.lt-sm="100%"></mat-divider>
   </div>
-  <div class="about" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center"
+  <div appFadeInOnce class="about" fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="center center"
        [class.first-profile]="first" [class.middle-profile]="!first" *ngFor="let member of staff; let first = first">
-    <div fxFlex="100%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2">
-      <p class="description">
+    <div appFadeInOnce fxFlex="100%" fxLayout="column" fxFlexOrder.gt-md="1" fxFlexOrder.lt-md="2">
+      <p appFadeInOnce class="description">
         {{member.description}}
       </p>
-      <div class="staff-skills">
+      <div appFadeInOnce class="staff-skills">
         <div fxLayout="column" fxLayoutAlign="center">
           <span fxFlexAlign="center" fxFlexAlign.gt-sm="start" class="skill-header">Things I am good at</span>
           <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="start">
@@ -21,8 +21,8 @@
       </div>
     </div>
     <div fxFlex="50%" fxFlexOrder.gt-md="2" fxFlexOrder.lt-md="1" fxLayoutAlign="center center">
-      <div class="headshot-container">
-        <img alt="dave-headshot" class="headshot" src="{{member.headshot}}"/>
+      <div appFadeInOnce class="headshot-container">
+        <img appFadeInOnce alt="dave-headshot" class="headshot" src="{{member.headshot}}"/>
       </div>
     </div>
   </div>
