@@ -1,8 +1,19 @@
-<mat-toolbar [@toggle]="isVisible" class="md-tall mat-elevation-z4" color="primary">
-  <button fxShow="true" fxHide.gt-sm="true" (click)="openSideNav()" color="accent" mat-icon-button >
-    <mat-icon svgIcon="menu" ></mat-icon>
-  </button>
-  <span class="fill-remaining-space"></span>
-  <app-toolbar-branding class="branding fill-remaining-space"></app-toolbar-branding>
-  <app-navigation-buttons fxShow.gt-md="true" fxHide.lt-md="true"></app-navigation-buttons>
+<mat-toolbar fxLayout="row" fxLayoutAlign="start center" [@toggle]="isVisible" class="md-tall mat-elevation-z4"
+             color="primary">
+  <mat-toolbar-row>
+    <button fxShow="true" fxHide.gt-sm="true" (click)="openSideNav()" color="accent" mat-icon-button>
+      <mat-icon svgIcon="menu"></mat-icon>
+    </button>
+    <div fxFlex="grow" class="branding-container" fxLayout="row">
+      <a fxFlexOrder="1" fxFlexOrder.gt-sm="2" href="javascript:void(0);" (click)="scrollToTop()">
+        <img alt="text-logo" class="toolbar-text-logo" src="assets/img/TextLogo.png">
+      </a>
+      <span fxFlexOrder="2" fxFlex="grow" fxShow="true" fxHide.gt-sm="true"></span>
+      <a fxFlexOrder="3" fxFlexOrder.gt-sm="1" href="javascript:void(0);" (click)="scrollToTop()">
+        <img alt="logo" class="toolbar-logo" src="assets/img/JointLogoNoText.png"/>
+      </a>
+    </div>
+    <span fxHide="true" fxShow.gt-sm="true" fxFlex="grow"></span>
+    <app-navigation-buttons fxShow.gt-md="true" fxHide.lt-md="true"></app-navigation-buttons>
+  </mat-toolbar-row>
 </mat-toolbar>

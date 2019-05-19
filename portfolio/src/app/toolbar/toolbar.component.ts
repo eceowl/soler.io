@@ -45,8 +45,12 @@ export class ToolbarComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-
   }
+
+  scrollToTop() {
+    this.scrollService.scrollToTop();
+  }
+
 
   @HostBinding('@toggle')
   get toggle(): VisibilityState {

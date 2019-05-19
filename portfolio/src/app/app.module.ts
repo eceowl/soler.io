@@ -21,7 +21,6 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {HttpClientModule} from "@angular/common/http";
 import { DrawerComponent } from './drawer/drawer.component';
 import { NavigationButtonsComponent } from './navigation-buttons/navigation-buttons.component';
-import { ToolbarBrandingComponent } from './toolbar-branding/toolbar-branding.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -36,7 +35,6 @@ import { ContactComponent } from './contact/contact.component';
     CoverComponent,
     DrawerComponent,
     NavigationButtonsComponent,
-    ToolbarBrandingComponent,
     MainContentComponent,
     AboutComponent,
     PortfolioComponent,

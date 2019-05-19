@@ -2,14 +2,20 @@
 /* stylelint-disable material/no-prefixes */
 /* stylelint-enable */
 .container {
-  margin-top: 100px;
-  padding: 0px;
+  padding: 10px;
   margin-left: 0px;
 }
 @media only screen and (min-width: 901px) {
   .container {
-    margin-top: 210px;
-    margin-left: 75px;
+    margin-top: 200px;
+    margin-left: 150px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 .container .header .header-label {
@@ -40,17 +46,33 @@
 }
 
 .project-container {
-  margin-right: 75px;
+  padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 901px) {
   .project-container {
     padding: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .project-container {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 19px;
   }
 }
 .project-container .card-container {
-  padding: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 10px;
+}
+@media only screen and (min-width: 900px) {
+  .project-container .card-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 }
 .project-container .card-container .project-card {
   border-radius: 10px;

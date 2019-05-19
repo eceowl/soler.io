@@ -11,9 +11,9 @@
       </p>
       <div class="staff-skills">
         <div fxLayout="column" fxLayoutAlign="center">
-          <span fxFlexAlign="center" class="skill-header">Things I am good at</span>
-          <div fxLayout="row wrap" fxLayoutAlign="start">
-            <ul fxFlex="50%" class="skills" *ngFor="let skill of member.skills">
+          <span fxFlexAlign="center" fxFlexAlign.gt-sm="start" class="skill-header">Things I am good at</span>
+          <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="start">
+            <ul fxFlex="50%" fxFlex.gt-sm="40%" class="skills" *ngFor="let skill of member.skills">
               <li>{{skill}}</li>
             </ul>
           </div>
