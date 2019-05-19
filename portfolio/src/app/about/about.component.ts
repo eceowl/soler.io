@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {StaffMember} from "../models/staff-member";
+import {staff} from "../constants/staff";
 
 @Component({
   selector: 'app-about',
@@ -7,18 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  daveSkills = [
-    "Responsive Website Development",
-    "Mobile App Development",
-  ];
+  staff: StaffMember[];
 
-  gillSkills = [
-    "Digital Content Strategy",
-    "Writing/Editorial Content",
-    "Social Media Marketing"
-  ];
-
-  constructor() { }
+  constructor() {
+    this.staff = staff;
+  }
 
   ngOnInit() {
   }

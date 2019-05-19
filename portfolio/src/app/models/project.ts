@@ -3,6 +3,7 @@ export class Project {
               public company: string,
               public description: string,
               public link: string,
+              public image: string,
               public icon: string
               ){}
 }

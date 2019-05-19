@@ -69,18 +69,20 @@
   }
 
   .staff-skills {
+    margin-top: 50px;
     .skill-header {
       font-size: 24px;
       font-family: 'Righteous', cursive;
       color: var(--color-accent);
-      text-align: left;
     }
 
     .skills {
       ul {
+        width: 100%;
         text-align: left;
       }
       li {
+        font-size: 16px;
         color: white;
         font-family: Nova, monospace
       }

@@ -2,13 +2,14 @@
 /* stylelint-disable material/no-prefixes */
 /* stylelint-enable */
 .container {
-  margin-top: 200px;
-  margin-left: 75px;
+  margin-top: 100px;
+  padding: 0px;
+  margin-left: 0px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 901px) {
   .container {
-    padding: 10px;
-    margin-left: 0px;
+    margin-top: 210px;
+    margin-left: 75px;
   }
 }
 .container .header .header-label {
@@ -48,41 +49,55 @@
     margin-right: 0px;
   }
 }
-.project-container .project-list .project-card {
+.project-container .card-container {
+  padding: 10px;
+}
+.project-container .card-container .project-card {
   border-radius: 10px;
   background-color: #4F4F4F;
-  margin-top: 20px;
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-.project-container .project-list .project-card:hover {
+.project-container .card-container .project-card .card-image {
+  object-fit: cover;
+  height: 200px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+.project-container .card-container .project-card .card-image:hover {
+  opacity: 0.7;
+}
+.project-container .card-container .project-card:hover {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
-.project-container .project-list .project-card .project-title {
+.project-container .card-container .project-card .project-title {
   font-family: Righteous, cursive;
   color: var(--color-accent);
   font-size: 18px;
 }
-.project-container .project-list .project-card .project-title .icon {
+.project-container .card-container .project-card .project-title .icon {
   color: white;
   margin-left: 3px;
 }
-.project-container .project-list .project-card .project-title .name {
+.project-container .card-container .project-card .project-title .name {
   margin-left: 10px;
 }
-.project-container .project-list .project-card .project-subtitle {
+.project-container .card-container .project-card .project-subtitle {
   margin-top: 5px;
   margin-left: 3px;
   font-family: Nova, monospace;
 }
-.project-container .project-list .project-card .project-subtitle mat-divider {
-  margin-top: 10px;
+.project-container .card-container .project-card .project-content {
+  padding-top: 20px;
 }
-.project-container .project-list .project-card .project-content .project-description {
+.project-container .card-container .project-card .project-content .project-description {
   font-family: Nova, monospace;
 }
-.project-container .project-list .project-card .project-action {
-  justify-content: end;
+@media only screen and (max-width: 959px) {
+  .project-container .card-container .project-card .project-content .project-description {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=portfolio.component.css.map */

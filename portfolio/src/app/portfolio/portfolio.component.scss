@@ -1,12 +1,14 @@
 @import '../../../node_modules/@angular/material/_theming.scss';
 
 .container {
-  margin-top: 200px;
-  margin-left: 75px;
+  margin-top: 100px;
+  padding: 0px;
+  margin-left: 0px;
 
-  @media only screen and (max-width: 900px) {
-    padding: 10px;
-    margin-left: 0px;
+
+  @media only screen and (min-width: 901px) {
+    margin-top: 210px;
+    margin-left: 75px;
   }
 
   .header {
@@ -45,55 +47,67 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  .project-list {
-    .project-card {
-      border-radius: 10px;
-      background-color: #4F4F4F;
+    .card-container {
+      padding: 10px;
+      .project-card {
+        border-radius: 10px;
+        background-color: #4F4F4F;
 
-      margin-top: 20px;
+        .card-image {
+          object-fit: cover;
+          height: 200px;
+          opacity: .5;
 
-      @include mat-elevation-transition;
-      @include mat-elevation(2);
+          transition: opacity 0.3s;
+          -webkit-transition: opacity 0.3s;
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+
+        @include mat-elevation-transition;
+        @include mat-elevation(2);
 
 
-      &:hover {
-        @include mat-elevation(8);
-      }
+        &:hover {
+          @include mat-elevation(8);
+        }
 
-      .project-title {
-        font-family: Righteous, cursive;
-        color: var(--color-accent);
-        font-size: 18px;
+        .project-title {
+          font-family: Righteous, cursive;
+          color: var(--color-accent);
+          font-size: 18px;
 
-        .icon {
-          color: white;
+          .icon {
+            color: white;
+            margin-left: 3px;
+          }
+
+          .name {
+            margin-left: 10px;
+          }
+        }
+
+        .project-subtitle {
+          margin-top: 5px;
           margin-left: 3px;
-        }
-
-        .name {
-          margin-left: 10px;
-        }
-      }
-
-      .project-subtitle {
-        margin-top: 5px;
-        margin-left: 3px;
-        font-family: Nova, monospace;
-
-        mat-divider {
-          margin-top: 10px;
-        }
-      }
-
-      .project-content {
-        .project-description {
           font-family: Nova, monospace;
-        }
-      }
 
-      .project-action {
-        justify-content: end;
+        }
+
+        .project-content {
+          padding-top: 20px;
+
+          .project-description {
+            font-family: Nova, monospace;
+
+            @media only screen and (max-width: 959px) {
+              font-size: 14px;
+            }
+
+          }
+        }
       }
     }
   }
-}

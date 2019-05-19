@@ -5,8 +5,9 @@
   </div>
   <div class="project-container">
     <div fxLayout="row wrap" fxLayout.lt-sm="column wrap" fxLayoutAlign="center center" class="project-list" >
-      <div style="padding: 2px;" fxFlex.gt-sm="33%" fxFlex.sm="50%" fxFlex.lt-sm="100%"   class="card-container" *ngFor="let project of projects">
+      <div fxFlex.gt-sm="33%" fxFlex.sm="50%" fxFlex.lt-sm="100%"   class="card-container" *ngFor="let project of projects">
         <mat-card class="project-card">
+          <img class="card-image" alt="{{project.name}} thumbnail" mat-card-image src="{{project.image}}"/>
           <mat-card-title fxLayout="row" class="project-title">
             <div class="icon">
               <i [className]="project.icon"></i>
@@ -26,8 +27,8 @@
           <mat-divider inset="true"></mat-divider>
           <mat-card-actions align="end">
 
-            <button mat-flat-button color="accent" (click)="openLink(project.link)" class="project-action">
-              <i class="fas fa-external-link-alt"></i> Show
+            <button mat-icon-button color="accent" (click)="openLink(project.link)" class="project-action">
+              <i class="fas fa-external-link-alt"></i>
             </button>
           </mat-card-actions>
         </mat-card>

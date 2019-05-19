@@ -28,14 +28,19 @@
   .description {
     @extend .intro;
 
-    margin-top: 25px;
+    margin-top: 35px;
     font-size: 18px;
     color: lightgray;
     max-width: 35em;
   }
 
   .specialities {
-    @extend .description
+    @extend .intro;
+
+    margin-top: 15px;
+    font-size: 18px;
+    color: lightgray;
+    max-width: 35em;
   }
 
   .cta-button {

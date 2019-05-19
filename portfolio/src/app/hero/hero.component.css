@@ -14,16 +14,22 @@
   font-size: 48px;
   font-family: "Righteous", cursive;
 }
-.intro-container .adjusted, .intro-container .intro, .intro-container .description, .intro-container .specialities {
+.intro-container .adjusted, .intro-container .intro, .intro-container .specialities, .intro-container .description {
   margin-left: 3px;
 }
-.intro-container .intro, .intro-container .description, .intro-container .specialities {
+.intro-container .intro, .intro-container .specialities, .intro-container .description {
   color: white;
   font-size: 24px;
   font-family: Nova, monospace;
 }
-.intro-container .description, .intro-container .specialities {
-  margin-top: 25px;
+.intro-container .description {
+  margin-top: 35px;
+  font-size: 18px;
+  color: lightgray;
+  max-width: 35em;
+}
+.intro-container .specialities {
+  margin-top: 15px;
   font-size: 18px;
   color: lightgray;
   max-width: 35em;
