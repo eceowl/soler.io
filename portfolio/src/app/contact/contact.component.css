@@ -2,6 +2,7 @@
   margin-top: 100px;
 }
 .container .contact-content .header {
+  opacity: 0;
   font-size: 36px;
   font-family: Righteous, cursive;
   color: var(--color-accent);
@@ -12,6 +13,7 @@
   }
 }
 .container .contact-content .body {
+  opacity: 0;
   font-size: 18px;
   font-family: Nova, monospace;
   color: lightgray;
@@ -23,6 +25,7 @@
   }
 }
 .container .contact-content button {
+  opacity: 0;
   margin-top: 25px;
 }
 

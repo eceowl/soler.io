@@ -15,6 +15,7 @@
   }
 
   .header {
+    opacity:0;
     .header-label {
       color: var(--color-accent);
       font-size: 36px;
@@ -50,8 +51,11 @@
   }
 
   .about {
+    opacity:0;
     .headshot-container {
+
       .headshot {
+        opacity:0;
         border-radius: 8px;
         mask-image: linear-gradient(var(--color-accent), transparent);
         max-height: 450px;
@@ -66,6 +70,7 @@
 
     .description {
       @extend .base;
+      opacity: 0;
       color:  lightgray;
       font-size: 18px;
       font-family: Nova, monospace;
@@ -73,6 +78,7 @@
   }
 
   .staff-skills {
+    opacity:0;
     margin-top: 50px;
     .skill-header {
       font-size: 24px;

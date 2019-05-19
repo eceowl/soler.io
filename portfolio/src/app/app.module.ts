@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { FadeInOneDirective } from './directives/fade-in-one.directive';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ContactComponent } from './contact/contact.component';
     PortfolioComponent,
     FooterComponent,
     ContactComponent,
+    FadeInOneDirective,
   ],
   imports: [
     BrowserModule,

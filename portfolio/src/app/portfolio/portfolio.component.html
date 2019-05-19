@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="header" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="start start">
+  <div appFadeInOnce class="header" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="start start">
     <h1 fxFlex="100%" fxFlex.gt-xs="40%" fxFlex.gt-sm="45%" fxFlex.gt-md="30%" class="header-label">What have we done?</h1>
     <mat-divider fxFlex="100%" fxFlex.gt-xs="50%" fxFlex.gt-sm="40%" fxFlex.gt-md="50%"></mat-divider>
   </div>
   <div class="project-container">
     <div fxLayout="row wrap" fxLayout.lt-sm="column wrap" fxLayoutAlign="center center" class="project-list" >
-      <div fxFlex.gt-sm="33%" fxFlex.sm="50%" fxFlex.lt-sm="100%"   class="card-container" *ngFor="let project of projects">
-        <mat-card class="project-card">
+      <div fxFlex.gt-sm="33%" fxFlex.sm="50%" fxFlex.lt-sm="100%" class="card-container" *ngFor="let project of projects">
+        <mat-card appFadeInOnce class="project-card">
           <img class="card-image" alt="{{project.name}} thumbnail" mat-card-image src="{{project.image}}"/>
           <mat-card-title fxLayout="row" class="project-title">
             <div class="icon">
