@@ -34,11 +34,11 @@
     margin-top: 30px;
   }
 }
-.container .middle-profiles {
-  margin-top: 55px;
-}
-.container .about {
+.container .first-profile {
   margin-top: 25px;
+}
+.container .middle-profile {
+  margin-top: 100px;
 }
 .container .about .headshot-container .headshot {
   border-radius: 8px;
