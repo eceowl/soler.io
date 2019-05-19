@@ -1,4 +1,4 @@
-.intro-container{
+.intro-container {
   display: flex;
   padding: 10px;
   margin-left: 0px;
@@ -11,38 +11,62 @@
   }
 
   .greeting {
+    -webkit-animation: fadeIn 500ms 1s forwards; /* Safari 4+ */
+    -moz-animation: fadeIn 500ms 1s forwards; /* Fx 5+ */
+    -o-animation: fadeIn 500ms 1s forwards; /* Opera 12+ */
+    animation: fadeIn 500ms 1s forwards;
+
+    opacity: 0;
     color: var(--color-accent);
     font-size: 48px;
     font-family: 'Righteous', cursive;
   }
 
-  .adjusted {
+  .base {
     margin-left: 3px;
+    color: white;
+    font-size: 24px;
+    font-family: Nova, monospace;
+    opacity: 0;
   }
 
   .intro {
-    @extend .adjusted;
-    color:  white;
-    font-size: 24px;
-    font-family: Nova, monospace;
+    @extend .base;
+
+
+    -webkit-animation: fadeIn 500ms 1.5s forwards; /* Safari 4+ */
+    -moz-animation: fadeIn 500ms 1.5s forwards; /* Fx 5+ */
+    -o-animation: fadeIn 500ms 1.5s forwards; /* Opera 12+ */
+    animation: fadeIn 500ms 1.5s forwards;
+
   }
 
   .description {
-    @extend .intro;
+    @extend .base;
 
     margin-top: 35px;
     font-size: 18px;
     color: lightgray;
     max-width: 35em;
+
+    -webkit-animation: fadeIn 500ms 2s forwards; /* Safari 4+ */
+    -moz-animation: fadeIn 500ms 2s forwards; /* Fx 5+ */
+    -o-animation: fadeIn 500ms 2s forwards; /* Opera 12+ */
+    animation: fadeIn 500ms 2s forwards;
   }
 
   .specialities {
-    @extend .intro;
+    @extend .base;
 
     margin-top: 15px;
     font-size: 18px;
     color: lightgray;
     max-width: 35em;
+
+    -webkit-animation: fadeIn 500ms 2.5s forwards; /* Safari 4+ */
+    -moz-animation: fadeIn 500ms 2.5s forwards; /* Fx 5+ */
+    -o-animation: fadeIn 500ms 2.5s forwards; /* Opera 12+ */
+    animation: fadeIn 500ms 2.5s forwards;
   }
 
   .cta-button {
@@ -51,5 +75,23 @@
     border-width: thin;
     border-color: var(--color-accent);
     outline-color: var(--color-accent);
+
+    opacity:0;
+    -webkit-animation: fadeIn 500ms 3.0s forwards; /* Safari 4+ */
+    -moz-animation: fadeIn 500ms 3.0s forwards; /* Fx 5+ */
+    -o-animation: fadeIn 500ms 3.0s forwards; /* Opera 12+ */
+    animation: fadeIn 500ms 3.0s   forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px);
+    opacity: 1;
   }
 }

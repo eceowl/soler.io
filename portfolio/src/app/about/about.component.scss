@@ -60,12 +60,12 @@
       }
     }
 
-    .adjusted {
+    .base {
       margin-left: 3px;
     }
 
     .description {
-      @extend .adjusted;
+      @extend .base;
       color:  lightgray;
       font-size: 18px;
       font-family: Nova, monospace;

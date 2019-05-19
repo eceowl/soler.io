@@ -3,6 +3,12 @@
   height: 400px;
   width: 100%;
 
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+
   @media screen and (max-width: 600px) {
     height: 250px;
   }
@@ -33,5 +39,15 @@
       top:0px;
       z-index:-1;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

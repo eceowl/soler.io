@@ -53,7 +53,7 @@
   max-height: 450px;
   max-width: 347px;
 }
-.container .about .adjusted, .container .about .description {
+.container .about .base, .container .about .description {
   margin-left: 3px;
 }
 .container .about .description {

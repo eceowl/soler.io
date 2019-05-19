@@ -1,3 +1,32 @@
+
+@mixin fade-in-animation($delay) {
+  opacity: 0;
+  -webkit-animation: fadeIn 300ms $delay forwards; /* Safari 4+ */
+  -moz-animation: fadeIn 300ms $delay forwards; /* Fx 5+ */
+  -o-animation: fadeIn 300ms $delay forwards; /* Opera 12+ */
+  animation: fadeIn 300ms $delay forwards;
+}
+
+.fade-in-animation {
+  opacity: 0;
+  -webkit-animation: fadeIn 300ms 250ms forwards; /* Safari 4+ */
+  -moz-animation: fadeIn 300ms 250ms forwards; /* Fx 5+ */
+  -o-animation: fadeIn 300ms 250ms forwards; /* Opera 12+ */
+  animation: fadeIn 300ms 250ms forwards;
+}
+
+.toolbar-button:nth-child(1) {
+  @include fade-in-animation(250ms)
+}
+
+.toolbar-button:nth-child(2) {
+  @include fade-in-animation(500ms)
+}
+
+.toolbar-button:nth-child(3) {
+  @include fade-in-animation(750ms)
+}
+
 .toolbar-button {
   margin-left: 6px;
 
@@ -29,5 +58,16 @@
 
   @media only screen and (max-width: 959px) {
     flex-flow: column nowrap;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
