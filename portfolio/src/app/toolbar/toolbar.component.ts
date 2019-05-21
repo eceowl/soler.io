@@ -33,7 +33,7 @@ enum VisibilityState {
   ]
 })
 export class ToolbarComponent implements OnInit, AfterViewInit {
-  private isVisible = true;
+  public isVisible = true;
 
   constructor(iconRegistry: MatIconRegistry,
               sanitizer: DomSanitizer,

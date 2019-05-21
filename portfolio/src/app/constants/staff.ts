@@ -13,7 +13,7 @@ export const staff = [
 
   new StaffMember("Gill Soler",
     "Digital Content Strategist",
-    "My name is Gill Soler and Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "My name is Gill Soler and this is coming soon.",
     ["Digital Content Strategy", "Copywriting", "Social Media Marketing", "Editorial Content"],
     "assets/img/GillHeadshot.jpg"),
 ];
