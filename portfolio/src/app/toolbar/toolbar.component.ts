@@ -1,8 +1,6 @@
 import {AfterViewInit, Component, EventEmitter, HostBinding, OnInit, Output} from '@angular/core';
 import {MatIconRegistry} from "@angular/material";
 import {DomSanitizer} from "@angular/platform-browser";
-import {fromEvent} from "rxjs";
-import {distinctUntilChanged, filter, map, pairwise, throttleTime} from "rxjs/operators";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {ScrollService} from "../services/scroll.service";
 import {DrawerService} from "../services/drawer.service";
@@ -11,8 +9,6 @@ export enum VisibilityState {
   Visible = 'visible',
   Hidden = 'hidden'
 }
-
-
 
 @Component({
   selector: 'app-toolbar',

@@ -13,7 +13,11 @@ export const staff = [
 
   new StaffMember("Gill Soler",
     "Digital Content Strategist",
-    "My name is Gill Soler and this is coming soon.",
+    "My name is Gillian Soler and I write things people like to read. Still here? Yay. I've been a digital " +
+    "content writer and strategist since 2012. Every social media account I made, every blog I started, every chance I " +
+    "could I would craft a colorful version of myself and the brands I worked for. I break rules, I have fun, I end " +
+    "sentences with prepositions and don't give a sh*t. I'll make your brand look baller and leave my sailor mouth " +
+    "at sea... unless you're into that sort of thing.",
     ["Digital Content Strategy", "Copywriting", "Social Media Marketing", "Editorial Content"],
     "assets/img/GillHeadshot.jpg"),
 ];
