@@ -6,6 +6,7 @@
 }
 .container .header {
   margin-left: 0px;
+  margin-top: 150px;
   opacity: 0;
 }
 @media only screen and (min-width: 901px) {
@@ -16,7 +17,6 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .container .header {
-    margin-top: 75px;
     margin-left: 50px;
     margin-right: 50px;
   }

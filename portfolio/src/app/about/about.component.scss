@@ -2,6 +2,7 @@
 .container {
   padding: 10px;
   margin-left: 0px;
+  margin-top: 150px;
 
   @media only screen and (min-width: 901px) {
     margin-top: 200px;
@@ -9,7 +10,6 @@
   }
 
   @media only screen and (min-width: 600px) and (max-width: 900px) {
-    margin-top: 75px;
     margin-left: 50px;
     margin-right: 50px;
   }
