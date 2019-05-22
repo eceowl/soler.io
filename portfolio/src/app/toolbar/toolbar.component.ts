@@ -7,7 +7,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 import {ScrollService} from "../services/scroll.service";
 import {DrawerService} from "../services/drawer.service";
 
-enum VisibilityState {
+export enum VisibilityState {
   Visible = 'visible',
   Hidden = 'hidden'
 }
