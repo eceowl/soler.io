@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   }
 
   showFacebook() {
-    window.open("https://www.facebook.com");
+    window.open("https://fb.me/SolerDotIO");
   }
 
   showInstagram() {

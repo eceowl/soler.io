@@ -23,9 +23,10 @@
     "@angular/platform-browser": "^7.2.15",
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/router": "^7.2.15",
-    "core-js": "^3.0.1",
+    "core-js": "^2.6.8",
     "rxjs": "6.5.2",
-    "zone.js": "^0.9.1"
+    "web-animations-js": "^2.3.1",
+    "zone.js": "^0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.9",
