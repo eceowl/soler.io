@@ -5,6 +5,7 @@
   <title>Soler.io: Modern Solutions for the Small Business</title>
   <base href="/">
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
@@ -13,5 +14,16 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
