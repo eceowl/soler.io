@@ -9,6 +9,16 @@
         "image": "/assets/img/uploads/wyndsorfarmthumbnail.png",
         "icon": "far fa-window-maximize"
       }
+    },
+    {
+      "project": {
+        "name": "Instagram Rebranding",
+        "client": "Wyndsor Farm",
+        "description": "We're the eyes behind the Wyndsor Farm Instagram account. With daily updates and smart social tags, we've boosted followers 50 percent and increased our follower engagement.",
+        "link": "https://www.instagram.com/wyndsor_farm/",
+        "image": "/portfolio/src/assets/img/uploads/wyndsorfarminstagramthumbnail.png",
+        "icon": "fab fa-instagram"
+      }
     }
   ]
 }
