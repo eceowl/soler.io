@@ -19,6 +19,7 @@ collections:
             - {label: "Description", name: "description", widget: "string"}
             - {label: "Dave's Expertise", name: "daveExpertise", widget: "string"}
             - {label: "Gill's Expertise", name: "gillExpertise", widget: "string"}
+            
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Portfolio" # Used in the UI
     files:
