@@ -7,6 +7,18 @@ site_url: https://www.soler.io
 logo_url: https://www.soler.io/assets/img/JointLogoNoText.png
 
 collections:
+  - name: "hero-section" # Used in routes, e.g., /admin/collections/blog
+      label: "Hero Section" # Used in the UI
+      files:
+        - label: "Hero"
+          name: "hero"
+          file: "portfolio/src/assets/sections/hero-section.json"
+          fields:
+            - {label: "Greeting", name: "greeting", widget: "string"}
+            - {label: "Introduction", name: "introduction", widget: "string"}
+            - {label: "Description", name: "description", widget: "string"}
+            - {label: "Dave's Expertise", name: "daveExpertise", widget: "string"}
+            - {label: "Gill's Expertise", name: "gillExpertise", widget: "string"}
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Portfolio" # Used in the UI
     files:

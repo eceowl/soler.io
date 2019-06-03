@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Hero} from "../models/hero";
 
 @Component({
   selector: 'app-hero',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  hero: Hero;
+
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+    this.httpClient.get("/assets/sections/hero-section.json").subscribe(response => {
+      this.hero = response["hero"];
+    });
   }
 
   sendEmail() {
