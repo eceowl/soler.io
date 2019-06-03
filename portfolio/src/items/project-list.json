@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Website Redesign",
+    "company": "Wyndsor Farm",
+    "description": "Together we redesigned this 10-year-old website to be sleek, modern, and mobile friendly. Additionally, we created an intuitive event calendar and online booking system to streamline reservations. ",
+    "link": "https://www.wyndsorfarm.com",
+    "image": "assets/img/WyndsorFarmThumbnail.PNG",
+    "icon": "far fa-window-maximize"
+  },
+  {
+    "name": "Instagram Rebranding",
+    "company": "Wyndsor Farm",
+    "description": "We're the eyes behind the Wyndsor Farm Instagram account. With daily updates and smart social tags, we've boosted followers 50 percent and increased our follower engagement",
+    "link": "https://www.instagram.com/wyndsor_farm/",
+    "image": "assets/img/WyndsorFarmInstagramThumbnail.PNG",
+    "icon": "fab fa-instagram"
+  }
+]
