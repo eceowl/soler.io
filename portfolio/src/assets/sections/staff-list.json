@@ -1,1 +1,18 @@
-{}
+{
+  "projects": [
+    {
+      "staffMember": {
+        "name": "Dave Soler",
+        "position": "Lead Software Engineer",
+        "description": "My name is Dave Soler and I've been creating software in the Philadelphia Area for over 6 years. I've created Android and iOS apps for teacher's and carpenter's unions, I've developed marketing websites for a local farm, I've even written software for the Children's Hospital of Philadelphia to help analyze patient data. Needless to say, I've seen it all and am confident I can help create software to solve your business needs.",
+        "headshot": "/portfolio/src/assets/img/uploads/daveheadshot.png",
+        "skills": [
+          "Responsive Website Development",
+          "Mobile App Development",
+          "IT Services",
+          "UI/UX Design"
+        ]
+      }
+    }
+  ]
+}
