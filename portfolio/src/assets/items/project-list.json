@@ -1,1 +1,14 @@
-{}
+{
+  "projects": [
+    {
+      "project": {
+        "name": "Website Redesign",
+        "client": "Wyndsor Farm",
+        "body": "Together we redesigned this 10-year-old website to be sleek, modern, and mobile friendly. Additionally, we created an intuitive event calendar and online booking system to streamline reservations.",
+        "link": "https://www.wyndsorfarm.com",
+        "image": "/assets/img/uploads/wyndsorfarmthumbnail.png",
+        "project-type": "far fa-window-maximize"
+      }
+    }
+  ]
+}
