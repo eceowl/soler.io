@@ -14,8 +14,7 @@ export class HeroComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get("/assets/sections/hero-section.json").subscribe(response => {
-      console.log(response);
+    this.httpClient.get("/assets/sections/hero-section.json").subscribe((response : Hero) => {
       this.hero = response;
     });
   }
