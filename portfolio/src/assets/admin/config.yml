@@ -7,19 +7,19 @@ site_url: https://www.soler.io
 logo_url: https://www.soler.io/assets/img/JointLogoNoText.png
 
 collections:
-  - name: "items" # Used in routes, e.g., /admin/collections/blog
-    label: "Items" # Used in the UI
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio" # Used in the UI
     files:
-      - label: "Project List"
-        name: "project-list"
+      - label: "Projects"
+        name: "projects"
         file: "portfolio/src/items/project-list.json"
         fields:
           - label: "Projects"
             name: "projects"
             widget: "list"
             fields:
-              - label: "Project Card"
-                name: "project-card"
+              - label: "Project"
+                name: "project"
                 widget: object
                 fields:
                   - {label: "Name", name: "name", widget: "string"}

@@ -3,6 +3,7 @@ import {Project} from "../models/project";
 import {MatIconRegistry} from "@angular/material";
 import {DomSanitizer} from "@angular/platform-browser";
 import {HttpClient} from "@angular/common/http";
+import {ProjectList} from "../models/project-list";
 
 @Component({
   selector: 'app-portfolio',
@@ -17,8 +18,11 @@ export class PortfolioComponent implements OnInit {
               sanitizer: DomSanitizer,
               private httpClient: HttpClient) {
 
-    this.httpClient.get("/items/project-list.json").subscribe(results => {
-        this.projects = results as Project[];
+    this.httpClient.get("/items/project-list.json").subscribe((results : ProjectList) => {
+        this.projects = results.projects;
+
+        console.log(results);
+        console.log(this.projects);
     });
     iconRegistry.addSvgIcon(
       'external-link',
