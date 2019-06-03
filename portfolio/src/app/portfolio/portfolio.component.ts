@@ -18,10 +18,9 @@ export class PortfolioComponent implements OnInit {
               sanitizer: DomSanitizer,
               private httpClient: HttpClient) {
 
-    this.httpClient.get("/assets/items/project-list.json").subscribe((results : ProjectList) => {
-        this.projects = results.projects;
+    this.httpClient.get("/assets/items/project-list.json").subscribe(response => {
+        this.projects = response["projects"].map(p => p["project"]);
 
-        console.log(results);
         console.log(this.projects);
     });
     iconRegistry.addSvgIcon(

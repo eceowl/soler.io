@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "assets/img/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "portfolio/src/assets/img/uploads" # Media files will be stored in the repo under images/uploads
 site_url: https://www.soler.io
 logo_url: https://www.soler.io/assets/img/JointLogoNoText.png
 
@@ -22,13 +22,13 @@ collections:
                 name: "project"
                 widget: object
                 fields:
-                  - {label: "Name", name: "name", widget: "string"}
-                  - {label: "Client", name: "client", widget: "string"}
-                  - {label: "Project Description", name: "body", widget: "string"}
-                  - {label: "Link", name: "link", widget: "string"}
-                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Project Name", name: "name", widget: "string"}
+                  - {label: "Client Name", name: "client", widget: "string"}
+                  - {label: "Project Description", name: "description", widget: "string"}
+                  - {label: "Project Link", name: "link", widget: "string"}
+                  - {label: "Project Thumbnail", name: "image", widget: "image"}
                   - label: "Project Type"
-                    name: "project-type"
+                    name: "icon"
                     widget: "select"
                     options:
                       - { label: "Website", value: "far fa-window-maximize" }
