@@ -15,7 +15,8 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     this.httpClient.get("/assets/sections/hero-section.json").subscribe(response => {
-      this.hero = response["hero"];
+      console.log(response);
+      this.hero = response;
     });
   }
 

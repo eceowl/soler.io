@@ -1,5 +1,5 @@
 <div class="intro-container">
-  <div fxLayout="column">
+  <div *ngIf="hero" fxLayout="column">
     <span id="greeting" class="greeting">{{hero.greeting}}</span>
     <span class="intro">{{hero.introduction}}</span>
     <span class="description">{{hero.description}}</span>
