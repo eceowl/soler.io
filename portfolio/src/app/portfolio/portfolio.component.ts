@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
               sanitizer: DomSanitizer,
               private httpClient: HttpClient) {
 
-    this.httpClient.get("/items/project-list.json").subscribe((results : ProjectList) => {
+    this.httpClient.get("/assets/items/project-list.json").subscribe((results : ProjectList) => {
         this.projects = results.projects;
 
         console.log(results);
