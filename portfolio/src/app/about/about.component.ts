@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {StaffMember} from "../models/staff-member";
 import {staff} from "../constants/staff";
+import {Hero} from "../models/hero";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-about',
@@ -11,11 +13,13 @@ export class AboutComponent implements OnInit {
 
   staff: StaffMember[];
 
-  constructor() {
-    this.staff = staff;
+  constructor(private httpClient: HttpClient) {
   }
 
   ngOnInit() {
+    this.httpClient.get("/assets/sections/staff-list.json").subscribe(response => {
+      this.staff = response["staff"].map(s => s.staffMember);
+    });
   }
 
 }

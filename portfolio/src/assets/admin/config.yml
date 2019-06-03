@@ -7,8 +7,8 @@ site_url: https://www.soler.io
 logo_url: https://www.soler.io/assets/img/JointLogoNoText.png
 
 collections:
-  - name: "hero-section" # Used in routes, e.g., /admin/collections/blog
-    label: "Hero Section" # Used in the UI
+  - name: "main" # Used in routes, e.g., /admin/collections/blog
+    label: "Main Page" # Used in the UI
     files:
       - label: "Hero"
         name: "hero"
@@ -19,12 +19,30 @@ collections:
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Dave's Expertise", name: "daveExpertise", widget: "string"}
           - {label: "Gill's Expertise", name: "gillExpertise", widget: "string"}
-  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
-    label: "Portfolio" # Used in the UI
-    files:
+      - label: "Staff"
+        name: "staff"
+        file: "portfolio/src/assets/sections/staff-list.json"
+        fields:
+          - label: "Staff"
+            name: "projects"
+            widget: "list"
+            fields:
+              - label: "Staff Member"
+                name: "staffMember"
+                widget: object
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Position", name: "position", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+                  - {label: "Headshot", name: "headshot", widget: "string"}
+                  - label: "Skills"
+                    name: "skills"
+                    widget: "list"
+                    allow_add: true
+                    field: {label: "Description", name: "description", widget: "string"}
       - label: "Projects"
         name: "projects"
-        file: "portfolio/src/assets/items/project-list.json"
+        file: "portfolio/src/assets/sections/project-list.json"
         fields:
           - label: "Projects"
             name: "projects"
