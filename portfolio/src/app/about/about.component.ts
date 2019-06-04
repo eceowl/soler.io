@@ -19,7 +19,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.httpClient.get("/assets/sections/staff-list.json").subscribe(response => {
       console.log(response);
-      this.staff = response as StaffMember[];
+      this.staff = response["staff"].map(s => s.staffMember);
     }); 
   }
 
