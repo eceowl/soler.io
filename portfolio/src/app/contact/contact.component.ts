@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Hero} from "../models/hero";
+import {ContactUs} from "../models/contact-us";
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contact: ContactUs;
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+    this.httpClient.get("/assets/sections/contact-section.json").subscribe((response : ContactUs) => {
+      this.contact = response;
+    });
   }
 
   contactUs() {

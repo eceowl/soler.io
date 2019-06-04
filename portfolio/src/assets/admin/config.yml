@@ -66,3 +66,10 @@ collections:
                       - { label: "Instagram", value: "fab fa-instagram" }
                       - { label: "Facebook", value: "fab fa-facebook" }
                       - {label: "Twitter", value: "fab fa-twitter"}
+      - label: "Contact"
+        name: "contact"
+        file: "portfolio/src/assets/sections/contact-section.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "string"}
+          - {label: "Button Label", name: "buttonLabel", widget: "string"}
