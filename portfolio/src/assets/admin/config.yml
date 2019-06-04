@@ -24,7 +24,7 @@ collections:
         file: "portfolio/src/assets/sections/staff-list.json"
         fields:
           - label: "Staff"
-            name: "projects"
+            name: "staff"
             widget: "list"
             fields:
               - label: "Staff Member"
