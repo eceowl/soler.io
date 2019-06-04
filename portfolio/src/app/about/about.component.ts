@@ -19,8 +19,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.httpClient.get("/assets/sections/staff-list.json").subscribe(response => {
       console.log(response);
-      this.staff = response;
-    });
+      this.staff = response as StaffMember[];
+    }); 
   }
 
 }
